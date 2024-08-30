@@ -1,5 +1,6 @@
 @import 'reset.less';
-@import 'variaveisEMapas.less';
+@import 'variaveis.less';
+@import 'cores.less';
 
 body {
     background-color: #cores[corDeFundo];
@@ -15,6 +16,10 @@ li {
     margin: 0 auto;
 
     @media @Tablet {
+        max-width: 80%;
+    }
+
+    @media @Mobile {
         max-width: 80%;
     }
 }
@@ -41,7 +46,8 @@ header {
         margin-left: 24px;
 
         a {
-            color: #cores[corDeLink]
+            color: #cores[corDeLink];
+            text-decoration: none;
         }
     }
 }
